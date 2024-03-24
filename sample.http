@@ -1,0 +1,29 @@
+### Lists all items
+GET http://sku-warehouse-3.us-east-1.elasticbeanstalk.com/items
+
+### Create an item
+POST http://sku-warehouse-3.us-east-1.elasticbeanstalk.com/items
+Content-Type: application/json
+
+{
+    "name": "A test content",
+    "quantity": 12
+}
+
+### Get a single item using id
+
+GET http://sku-warehouse-3.us-east-1.elasticbeanstalk.com/item/a7a68cc1-876e-46a1-8219-fca4ee34e316
+
+### Update a single item using id
+
+PUT http://sku-warehouse-3.us-east-1.elasticbeanstalk.com/item/a7a68cc1-876e-46a1-8219-fca4ee34e316
+Content-Type: application/json
+
+{
+    "name": "Rest of Time",
+    "quantity": "25"
+}
+
+### Delete One Item
+
+DELETE http://sku-warehouse-3.us-east-1.elasticbeanstalk.com/item/4bab2cd6-4e5b-4145-b0bc-f410bb5ca2f5
